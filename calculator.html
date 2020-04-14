@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <head>
+    <title>Online  Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/Users/michelle/Desktop/WebDev/CalculatorApp/public/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm centre">
+          <h1>Online Calculator</h2>
+          </div>
+        <div class="col-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm centre">
+          <form class="a">
+            <label class="title" for="a">Number A</label>
+            <br>
+            <input type="number" id="a">
+          </form>
+          <br>
+          <form class="b">
+            <label class="title" for="b">Number B</label>
+            <br>
+            <input type="number" id="b">
+          </form>
+          <br>
+          <form class="operations">
+            <p>Operation</p>
+            
+            <input type="radio" class="radio">
+            <label for="add"> Add</label>
+            <br>
+            <input type="radio" class="radio">
+            <label for="subtract"> Subtract</label>
+            <br>
+            <input type="radio" class="radio">
+            <label for="multiply"> Multiply</label>
+            <br>
+            <input type="radio" class="radio">
+            <label for="divide"> Divide</label>
+
+          </form>
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm centre">
+          <br>
+          <button>Calculate</button>
+          <br>
+          <br>
+          <p>Result: <span></span></p>
+          </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="calc.js"></script>
+  </body>
+</html>

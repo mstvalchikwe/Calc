@@ -1,0 +1,56 @@
+button {
+    background: pink;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+    color: rgb(32, 30, 30);
+    font-weight: bold;
+    outline-color: none;
+}
+
+button:hover {
+    background: hsl(345, 70%, 85%);
+    color: black;
+}
+
+button, #a, #b {
+    width: 95%;
+    font-weight: bold;
+    align-items: center;
+}
+
+.centre {
+    background: rgb(240, 240, 240);
+}
+
+#a, #b {
+    padding: 5px;
+    background: rgb(204, 202, 202);
+    border: 3px solid black;
+}
+
+label, p, .add, .divide, .multiply, .subtract {
+    font-weight: bold;
+}
+
+.container {
+    padding: 100px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

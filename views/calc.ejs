@@ -1,0 +1,74 @@
+<%- include("partials/header") %>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm centre">
+          <h1>Online Calculator</h2>
+          </div>
+        <div class="col-sm"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm centre">
+
+
+          <form class="a" action="/operation" method="POST">
+            <label class="title" for="a">Number A</label>
+            <br>
+            <input type="number" name="inputA" id="a" min="0">
+          </form>
+
+          <br>
+
+          <form class="b" action="/operation" method="POST">
+            <label class="title" for="b">Number B</label>
+            <br>
+            <input type="number" name="inputB" id="b">
+          </form>
+          <br>
+
+          <form class="operations" method="POST" action="/operation">
+            <p>Operation</p>
+            
+            <input type="radio" class="add" name="selection">
+            <label for="add"> Add</label>
+            <br>
+            <input type="radio" class="subtract" name="selection">
+            <label for="subtract"> Subtract</label>
+            <br>
+            <input type="radio" class="multiply" name="selection">
+            <label for="multiply"> Multiply</label>
+            <br>
+            <input type="radio" class="divide" name="selection">
+            <label for="divide"> Divide</label>
+
+          </form>
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm centre">
+          <br>
+          <form method="POST" action="/operation">
+            <button type="submit">Calculate</button>
+          </form>
+          <br>
+          <br>
+
+          <form class="result" action="/operation" method="GET">
+            <label for="result">Result</label>
+            <input type="number" name="result">
+          </form>
+          </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/calc.js"></script>
+
+<%- include("partials/footer") %>
